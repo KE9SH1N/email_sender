@@ -1,7 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+In this app we can send form data in our email directly using nodemailer. Inside this project we create an api where we control our email auth and credential with email structure.
 
 ## Getting Started
-
+At your terminal first - npm install
+Then =>
 First, run the development server:
 
 ```bash
@@ -14,23 +15,14 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## env File setup
+Here we should mention user name and password.
+EMAIL_USER=[your_email]@gmail.com # must be gmail account. if not we should change smtp host and port
+EMAIL_PASS=[16 digit app password] # email should be 2 step enabled and after that we can get a feature called app passwords where gmail allows us to create a 16 digit app password and here we should add that.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Otherwise we can't send email.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
