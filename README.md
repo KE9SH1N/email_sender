@@ -17,7 +17,7 @@ bun dev
 ```
 
 
-## env File setup
+## .env.local File setup
 Here we should mention user name and password.
 ```bash
 EMAIL_USER=[your_email]@gmail.com
