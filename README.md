@@ -19,9 +19,12 @@ bun dev
 
 ## env File setup
 Here we should mention user name and password.
-EMAIL_USER=[your_email]@gmail.com # must be gmail account. if not we should change smtp host and port
-EMAIL_PASS=[16 digit app password] # email should be 2 step enabled and after that we can get a feature called app passwords where gmail allows us to create a 16 digit app password and here we should add that.
-
+```bash
+EMAIL_USER=[your_email]@gmail.com
+# must be gmail account. if not we should change smtp host and port
+EMAIL_PASS=[16 digit app password]
+# email should be 2 step enabled and after that we can get a feature called app passwords where gmail allows us to create a 16 digit app password and here we should add that.
+```
 # Otherwise we can't send email.
 
 
