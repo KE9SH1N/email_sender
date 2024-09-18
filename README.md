@@ -1,9 +1,10 @@
 In this app we can send form data in our email directly using nodemailer. Inside this project we create an api where we control our email auth and credential with email structure.
 
 ## Getting Started
-At your terminal first - npm install
-Then =>
-First, run the development server:
+At your terminal
+First - npm install
+
+Then run the development server:
 
 ```bash
 npm run dev
