@@ -25,7 +25,7 @@ EMAIL_USER=[your_email]@gmail.com
 EMAIL_PASS=[16 digit app password]
 # email should be 2 step enabled and after that we can get a feature called app passwords where gmail allows us to create a 16 digit app password and here we should add that.
 ```
-# Otherwise we can't send email.
+Otherwise we can't send email.
 
 
 
