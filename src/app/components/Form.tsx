@@ -2,21 +2,23 @@
 import { useState } from "react";
 
 const Form = () => {
-	const [formData, setFormData] = useState<any>({
+	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
 		message: "",
 	});
-	const [status, setStatus] = useState<any>("");
+	const [status, setStatus] = useState("");
 
-	const handleChange = (e: any) => {
+	const handleChange = (
+		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
 		setFormData({
 			...formData,
 			[e.target.name]: e.target.value,
 		});
 	};
 
-	const handleSubmit = async (e: any) => {
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setStatus("Sending...");
 
