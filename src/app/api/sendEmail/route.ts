@@ -28,7 +28,7 @@ export async function POST(request: any) {
 		});
 
 		return new Response("Email sent successfully!", { status: 200 });
-	} catch (error) {
+	} catch (error: any) {
 		console.error(error);
 		return new Response("Error sending email.", { status: 500 });
 	}

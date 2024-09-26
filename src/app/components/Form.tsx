@@ -2,12 +2,12 @@
 import { useState } from "react";
 
 const Form = () => {
-	const [formData, setFormData] = useState({
+	const [formData, setFormData] = useState<any>({
 		name: "",
 		email: "",
 		message: "",
 	});
-	const [status, setStatus] = useState("");
+	const [status, setStatus] = useState<any>("");
 
 	const handleChange = (e: any) => {
 		setFormData({
