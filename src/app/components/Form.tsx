@@ -4,7 +4,6 @@ import { useState } from "react";
 const Form = () => {
 	const [formData, setFormData] = useState({
 		name: "",
-		email: "",
 		message: "",
 	});
 	const [status, setStatus] = useState("");
@@ -56,7 +55,7 @@ const Form = () => {
 							required
 						/>
 					</div>
-					<div className="mb-4">
+					{/* <div className="mb-4">
 						<label className="block mb-2">Email</label>
 						<input
 							type="email"
@@ -66,7 +65,7 @@ const Form = () => {
 							className="border p-2 w-full"
 							required
 						/>
-					</div>
+					</div> */}
 					<div className="mb-4">
 						<label className="block mb-2">Message</label>
 						<textarea

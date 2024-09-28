@@ -1,9 +1,9 @@
 import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
-	const { name, email, message } = await request.json();
+	const { name, message } = await request.json();
 
-	if (!name || !email || !message) {
+	if (!name || !message) {
 		return new Response("Please fill out all fields.", { status: 400 });
 	}
 
@@ -20,11 +20,14 @@ export async function POST(request: Request) {
 
 	try {
 		await transporter.sendMail({
-			from: email, // Sender's email
-			to: process.env.EMAIL_USER, // Your email to receive the message
-			subject: `New message from ${name}`,
+			from: process.env.EMAIL_USER,
+			to: "mishelgb42@gmail.com",
+			subject: `${name} Moving Estimate Request 3`,
 			text: message,
-			html: `<p>You have a new message from <b>${name}</b> (${email}):</p><p>${message}</p>`,
+			html: `<div>
+						<p>Name: <span><b>${name}</b></span></p>
+						<p>Phone Number: <span><b>${message}</b></span></p>
+					</div>`,
 		});
 
 		return new Response("Email sent successfully!", { status: 200 });
